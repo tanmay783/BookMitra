@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | BookMitra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>📚 Admin Dashboard</h1>
+        <button id="logout-btn" class="logout-btn-small">🚪 Logout</button>
+    </header>
+    <main>
+        <div class="admin-container">
+            <form id="upload-form">
+                <h2>📤 Upload Book</h2>
+                <input type="text" id="title" placeholder="Book Title" required>
+                <input type="file" id="pdf-file" accept="application/pdf" required>
+                <input type="file" id="thumbnail-file" accept="image/png, image/jpeg" required>
+                <button type="submit">Upload Book</button>
+                <button type="button" class="back-btn" onclick="goBack()">🔙 Back</button>
+            </form>
+
+            <div class="book-section">
+                <h2>📖 Book List</h2>
+                <div class="book-container" id="admin-book-list">
+                    <!-- Books will be displayed here for deletion -->
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
