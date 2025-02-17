@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Dark Background */
+body {
+    background-color: #0d0d0d; /* Pure black background */
+    color: white;
+    text-align: center;
+}
+
+/* Header */
+header {
+    padding: 20px;
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 255, 255, 0.2);
+}
+
+/* Increased "BookMitra" Font Size */
+header h1 {
+    white-space: nowrap; /* Prevent text from wrapping */
+    text-align: center; 
+    font-size: 40px; /* Increased from 32px */
+    font-weight: bold;
+    color: #00cc00; /* Green */
+}
+
+/* Sky Blue Admin Button */
+.admin-btn-large {
+    background-color: #00aaff; /* Sky Blue */
+    border: none;
+    padding: 12px 20px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.admin-btn-large:hover {
+    background-color: #0088cc;
+}
+
+/* Book Container */
+.book-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+/* Book Card */
+.book {
+    background-color: #1a1a1a;
+    padding: 15px;
+    margin: 10px;
+    width: 220px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 255, 0, 0.2);
+}
+
+.book img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.book h2 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #fff;
+}
+
+/* Green Buttons */
+.download-btn, .back-btn {
+    background-color: #00cc00; /* Green */
+    border: none;
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.download-btn:hover, .back-btn:hover {
+    background-color: #009900;
+}
+
+/* Delete Button */
+.delete-btn {
+    background-color: #ff4d4d; /* Red */
+    border: none;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.delete-btn:hover {
+    background-color: #cc0000;
+}
+
+/* Forms */
+form {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 255, 0, 0.2);
+}
+
+input, button {
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+}
+
+input {
+    background-color: #2a2a2a;
+    color: white;
+}
+
+input::placeholder {
+    color: #bbb;
+}
+
+/* Logout Button */
+#logout-btn {
+    background-color: #ff4d4d; /* Red */
+    padding: 10px 15px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+}
+
+#logout-btn:hover {
+    background-color: #cc0000;
+}
